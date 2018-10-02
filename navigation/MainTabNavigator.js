@@ -6,7 +6,7 @@ import TabBarIcon from '../components/TabBarIcon';
 import HomeScreen from '../screens/HomeScreen';
 import LinksScreen from '../screens/LinksScreen';
 import SettingsScreen from '../screens/SettingsScreen';
-import HelloWorld from '../screens/MultipleGreeting';
+import HelloWorld from '../screens/BlinkApp';
 import Banana from '../screens/Banana';
 
 const HomeStack = createStackNavigator({
@@ -47,7 +47,7 @@ const BananaStack = createStackNavigator({
     Links: Banana,
 });
 
-BananaStack.navigationOptions ={
+BananaStack.navigationOptions = {
     tabBarLabel: 'Banana',
 };
 
