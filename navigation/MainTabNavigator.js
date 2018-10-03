@@ -6,7 +6,7 @@ import TabBarIcon from '../components/TabBarIcon';
 import HomeScreen from '../screens/HomeScreen';
 import LinksScreen from '../screens/LinksScreen';
 import SettingsScreen from '../screens/SettingsScreen';
-import HelloWorld from '../screens/LotsOfStyles';
+import HelloWorld from '../screens/FixedDimensionsBasics';
 import Banana from '../screens/Banana';
 
 const HomeStack = createStackNavigator({
@@ -33,14 +33,6 @@ const HelloWorldStack = createStackNavigator({
 
 HelloWorldStack.navigationOptions = {
     tabBarLabel: 'HelloWorld',
-    tabBarIcon: ({focused}) => (
-        <TabBarIcon
-            focused={focused}
-            name={
-                Platform.OS === 'ios' ? `ios-information-cirle${focused ? '' : '-outline'}` : 'md-information-circle'
-            }
-        />
-    ),
 };
 
 const BananaStack = createStackNavigator({
