@@ -6,7 +6,7 @@ import TabBarIcon from '../components/TabBarIcon';
 import HomeScreen from '../screens/HomeScreen';
 import LinksScreen from '../screens/LinksScreen';
 import SettingsScreen from '../screens/SettingsScreen';
-import HelloWorld from '../screens/MyFlatList';
+import HelloWorld from '../screens/MySectionList';
 import Banana from '../screens/Banana';
 
 const HomeStack = createStackNavigator({
